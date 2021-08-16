@@ -1,0 +1,2929 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1500,
+  "model": {
+    "name": "Falcon_Sales_Performance",
+    "culture": "en-US",
+    "dataSources": [
+      {
+        "type": "structured",
+        "name": "SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-",
+        "connectionDetails": {
+          "protocol": "tds",
+          "address": {
+            "server": "shell-01-eun-sq-giuylgxokswxqyaqpbwr.database.windows.net",
+            "database": "shell-01-eun-sqdb-klhluzgkhaeyobkfdjjb"
+          },
+          "authentication": null,
+          "query": null
+        },
+        "credential": {
+          "AuthenticationKind": "OAuth2",
+          "kind": "SQL",
+          "path": "shell-01-eun-sq-giuylgxokswxqyaqpbwr.database.windows.net;shell-01-eun-sqdb-klhluzgkhaeyobkfdjjb",
+          "Expires": "Mon, 09 Aug 2021 06:21:02 GMT"
+        }
+      }
+    ],
+    "tables": [
+      {
+        "name": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "columns": [
+          {
+            "name": "BUSINESS_TRANSACTION_CODE",
+            "dataType": "string",
+            "sourceColumn": "BUSINESS_TRANSACTION_CODE"
+          },
+          {
+            "name": "BUSINESS_TRANSACTION_NAME",
+            "dataType": "string",
+            "sourceColumn": "BUSINESS_TRANSACTION_NAME"
+          },
+          {
+            "name": "C1_MSDBUS_RESULT_MK_MAT_MARGIN_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "C1_MSDBUS_RESULT_MK_MAT_MARGIN_GC_GSAP",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "C1_MSDBUS_RESULT_MK_MAT_MARGIN_LC",
+            "dataType": "double",
+            "sourceColumn": "C1_MSDBUS_RESULT_MK_MAT_MARGIN_LC"
+          },
+          {
+            "name": "C3_CASH_DELIVERED_MARGIN_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "C3_CASH_DELIVERED_MARGIN_GC_GSAP"
+          },
+          {
+            "name": "C3_CASH_DELIVERED_MARGIN_LC",
+            "dataType": "double",
+            "sourceColumn": "C3_CASH_DELIVERED_MARGIN_LC"
+          },
+          {
+            "name": "CALENDAR_DAY",
+            "dataType": "string",
+            "sourceColumn": "CALENDAR_DAY"
+          },
+          {
+            "name": "CALENDAR_YEAR_MONTH",
+            "dataType": "string",
+            "sourceColumn": "CALENDAR_YEAR_MONTH"
+          },
+          {
+            "name": "CIF_DATE",
+            "dataType": "string",
+            "sourceColumn": "CIF_DATE"
+          },
+          {
+            "name": "COMPANY_CODE",
+            "dataType": "string",
+            "sourceColumn": "COMPANY_CODE"
+          },
+          {
+            "name": "COMPANY_CODE_COUNTRY_CODE",
+            "dataType": "string",
+            "sourceColumn": "COMPANY_CODE_COUNTRY_CODE"
+          },
+          {
+            "name": "CONTROLLING_DOC_ITEM_NO",
+            "dataType": "string",
+            "sourceColumn": "CONTROLLING_DOC_ITEM_NO"
+          },
+          {
+            "name": "CONTROLLING_DOC_NO",
+            "dataType": "string",
+            "sourceColumn": "CONTROLLING_DOC_NO"
+          },
+          {
+            "name": "COUNTRY_CODE",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_CODE"
+          },
+          {
+            "name": "DOC_CURRENCY_CODE",
+            "dataType": "string",
+            "sourceColumn": "DOC_CURRENCY_CODE"
+          },
+          {
+            "name": "DISTRIBUTION_CHANNEL_CODE",
+            "dataType": "string",
+            "sourceColumn": "DISTRIBUTION_CHANNEL_CODE"
+          },
+          {
+            "name": "DIVISION_CODE",
+            "dataType": "string",
+            "sourceColumn": "DIVISION_CODE"
+          },
+          {
+            "name": "LINE_OF_SALES_ACCOUNTABILITY_CODE",
+            "dataType": "string",
+            "sourceColumn": "LINE_OF_SALES_ACCOUNTABILITY_CODE"
+          },
+          {
+            "name": "LINE_OF_SALES_ACCOUNTABILITY_NAME",
+            "dataType": "string",
+            "sourceColumn": "LINE_OF_SALES_ACCOUNTABILITY_NAME"
+          },
+          {
+            "name": "MATERIAL_NO",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NO"
+          },
+          {
+            "name": "COUNTRY_BUSINESS_NAME",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_BUSINESS_NAME"
+          },
+          {
+            "name": "CLUSTER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CLUSTER_NAME"
+          },
+          {
+            "name": "REGION_NAME",
+            "dataType": "string",
+            "sourceColumn": "REGION_NAME"
+          },
+          {
+            "name": "P1000_PROCEEDS_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "P1000_PROCEEDS_GC_GSAP"
+          },
+          {
+            "name": "P1000_PROCEEDS_LC",
+            "dataType": "double",
+            "sourceColumn": "P1000_PROCEEDS_LC"
+          },
+          {
+            "name": "P2400_PURCHASES_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "P2400_PURCHASES_GC_GSAP"
+          },
+          {
+            "name": "P2400_PURCHASES_LC",
+            "dataType": "double",
+            "sourceColumn": "P2400_PURCHASES_LC"
+          },
+          {
+            "name": "P3000_OPERTNG_TARFF_EXPENS_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "P3000_OPERTNG_TARFF_EXPENS_GC_GSAP"
+          },
+          {
+            "name": "P3000_OPERTNG_TARFF_EXPENS_LC",
+            "dataType": "double",
+            "sourceColumn": "P3000_OPERTNG_TARFF_EXPENS_LC"
+          },
+          {
+            "name": "PLANT_CODE",
+            "dataType": "string",
+            "sourceColumn": "PLANT_CODE"
+          },
+          {
+            "name": "POSTING_DATE",
+            "dataType": "string",
+            "sourceColumn": "POSTING_DATE"
+          },
+          {
+            "name": "PRODUCT_LINE_OF_BUSINESS_CODE",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_LINE_OF_BUSINESS_CODE"
+          },
+          {
+            "name": "PROFIT_CENTRE_CODE",
+            "dataType": "string",
+            "sourceColumn": "PROFIT_CENTRE_CODE"
+          },
+          {
+            "name": "PROFIT_CENTRE_NAME",
+            "dataType": "string",
+            "sourceColumn": "PROFIT_CENTRE_NAME"
+          },
+          {
+            "name": "REF_DOC_NO",
+            "dataType": "string",
+            "sourceColumn": "REF_DOC_NO"
+          },
+          {
+            "name": "SALES_ORDER_NO",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_NO"
+          },
+          {
+            "name": "SALES_ORGANISATION_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORGANISATION_CODE"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "SHIP_TO_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CODE"
+          },
+          {
+            "name": "SHIP_TO_SALES_REP_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_SALES_REP_CODE"
+          },
+          {
+            "name": "SOLD_TO_ACCT_MNGR_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_ACCT_MNGR_CODE"
+          },
+          {
+            "name": "SOLD_TO_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CODE"
+          },
+          {
+            "name": "SALEABLE_PRODUCT_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALEABLE_PRODUCT_CODE"
+          },
+          {
+            "name": "UNIQUE_KEY",
+            "dataType": "string",
+            "sourceColumn": "UNIQUE_KEY"
+          },
+          {
+            "name": "SNAPSHOT_DTM",
+            "dataType": "string",
+            "sourceColumn": "SNAPSHOT_DTM"
+          },
+          {
+            "name": "VV002_VOLUME_IN_L15",
+            "dataType": "double",
+            "sourceColumn": "VV002_VOLUME_IN_L15"
+          },
+          {
+            "name": "VV010_LIST_PRICE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV010_LIST_PRICE_GC_GSAP"
+          },
+          {
+            "name": "VV010_LIST_PRICE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV010_LIST_PRICE_LC"
+          },
+          {
+            "name": "VV011_FORMULA_PRICE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV011_FORMULA_PRICE_GC_GSAP"
+          },
+          {
+            "name": "VV011_FORMULA_PRICE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV011_FORMULA_PRICE_LC"
+          },
+          {
+            "name": "VV012_CUSTOMER_PRICE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV012_CUSTOMER_PRICE_GC_GSAP"
+          },
+          {
+            "name": "VV012_CUSTOMER_PRICE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV012_CUSTOMER_PRICE_LC"
+          },
+          {
+            "name": "VV013_MANUAL_PRICE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV013_MANUAL_PRICE_GC_GSAP"
+          },
+          {
+            "name": "VV013_MANUAL_PRICE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV013_MANUAL_PRICE_LC"
+          },
+          {
+            "name": "VV016_NET_PROCEEDS_OTHER_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV016_NET_PROCEEDS_OTHER_GC_GSAP"
+          },
+          {
+            "name": "VV016_NET_PROCEEDS_OTHER_LC",
+            "dataType": "double",
+            "sourceColumn": "VV016_NET_PROCEEDS_OTHER_LC"
+          },
+          {
+            "name": "VV020_EXCISE_DUTY_OFFSET_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV020_EXCISE_DUTY_OFFSET_GC_GSAP"
+          },
+          {
+            "name": "VV020_EXCISE_DUTY_OFFSET_LC",
+            "dataType": "double",
+            "sourceColumn": "VV020_EXCISE_DUTY_OFFSET_LC"
+          },
+          {
+            "name": "VV030_SALES_DISCOUNT_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV030_SALES_DISCOUNT_GC_GSAP"
+          },
+          {
+            "name": "VV030_SALES_DISCOUNT_LC",
+            "dataType": "double",
+            "sourceColumn": "VV030_SALES_DISCOUNT_LC"
+          },
+          {
+            "name": "VV031_SALES_SURCHARGES_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV031_SALES_SURCHARGES_GC_GSAP"
+          },
+          {
+            "name": "VV031_SALES_SURCHARGES_LC",
+            "dataType": "double",
+            "sourceColumn": "VV031_SALES_SURCHARGES_LC"
+          },
+          {
+            "name": "VV032_SALES_REBATE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV032_SALES_REBATE_GC_GSAP"
+          },
+          {
+            "name": "VV032_SALES_REBATE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV032_SALES_REBATE_LC"
+          },
+          {
+            "name": "VV032_ZR20_GRANT_DEAL_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV032_ZR20_GRANT_DEAL_GC_GSAP"
+          },
+          {
+            "name": "VV032_ZR20_GRANT_DEAL_LC",
+            "dataType": "double",
+            "sourceColumn": "VV032_ZR20_GRANT_DEAL_LC"
+          },
+          {
+            "name": "VV036_PROCEEDS_FROM_SERVICE_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV036_PROCEEDS_FROM_SERVICE_GC_GSAP"
+          },
+          {
+            "name": "VV036_PROCEEDS_FROM_SERVICE_LC",
+            "dataType": "double",
+            "sourceColumn": "VV036_PROCEEDS_FROM_SERVICE_LC"
+          },
+          {
+            "name": "VV039_OUTPUT_TAX_OFFSET_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV039_OUTPUT_TAX_OFFSET_GC_GSAP"
+          },
+          {
+            "name": "VV039_OUTPUT_TAX_OFFSET_LC",
+            "dataType": "double",
+            "sourceColumn": "VV039_OUTPUT_TAX_OFFSET_LC"
+          },
+          {
+            "name": "VV200_TRANSFER_PRICE_SUPPLY_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV200_TRANSFER_PRICE_SUPPLY_GC_GSAP"
+          },
+          {
+            "name": "VV200_TRANSFER_PRICE_SUPPLY_LC",
+            "dataType": "double",
+            "sourceColumn": "VV200_TRANSFER_PRICE_SUPPLY_LC"
+          },
+          {
+            "name": "VV230_TRANSFER_PRICE_LSC_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_TRANSFER_PRICE_LSC_GC_GSAP"
+          },
+          {
+            "name": "VV230_TRANSFER_PRICE_LSC_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_TRANSFER_PRICE_LSC_LC"
+          },
+          {
+            "name": "VV230_ZT30_IC_SEC_DISTRIB_COST_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT30_IC_SEC_DISTRIB_COST_GC_GSAP"
+          },
+          {
+            "name": "VV230_ZT30_IC_SEC_DISTRIB_COST_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT30_IC_SEC_DISTRIB_COST_LC"
+          },
+          {
+            "name": "VV230_ZT31_IC_STORAGE_HANDLING_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT31_IC_STORAGE_HANDLING_GC_GSAP"
+          },
+          {
+            "name": "VV230_ZT31_IC_STORAGE_HANDLING_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT31_IC_STORAGE_HANDLING_LC"
+          },
+          {
+            "name": "VV230_ZT32_IC_PRIMARY_DIST_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT32_IC_PRIMARY_DIST_GC_GSAP"
+          },
+          {
+            "name": "VV230_ZT32_IC_PRIMARY_DIST_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT32_IC_PRIMARY_DIST_LC"
+          },
+          {
+            "name": "VV230_ZT44_IC_OTH_COGS_RCOV_TRF_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT44_IC_OTH_COGS_RCOV_TRF_GC_GSAP"
+          },
+          {
+            "name": "VV230_ZT44_IC_OTH_COGS_RCOV_TRF_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT44_IC_OTH_COGS_RCOV_TRF_LC"
+          },
+          {
+            "name": "VV230_ZT49_IC_FREIGHT_COSTS_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT49_IC_FREIGHT_COSTS_GC_GSAP"
+          },
+          {
+            "name": "VV230_ZT49_IC_FREIGHT_COSTS_LC",
+            "dataType": "double",
+            "sourceColumn": "VV230_ZT49_IC_FREIGHT_COSTS_LC"
+          },
+          {
+            "name": "VV232_SHANDLING_TAR_LSC_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV232_SHANDLING_TAR_LSC_GC_GSAP"
+          },
+          {
+            "name": "VV232_SHANDLING_TAR_LSC_LC",
+            "dataType": "double",
+            "sourceColumn": "VV232_SHANDLING_TAR_LSC_LC"
+          },
+          {
+            "name": "VV233_SEC_TRANS_TARIFF_LSC_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV233_SEC_TRANS_TARIFF_LSC_GC_GSAP"
+          },
+          {
+            "name": "VV233_SEC_TRANS_TARIFF_LSC_LC",
+            "dataType": "double",
+            "sourceColumn": "VV233_SEC_TRANS_TARIFF_LSC_LC"
+          },
+          {
+            "name": "VV242_SHANDL_TAR_OVUN_LSC_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV242_SHANDL_TAR_OVUN_LSC_GC_GSAP"
+          },
+          {
+            "name": "VV242_SHANDL_TAR_OVUN_LSC_LC",
+            "dataType": "double",
+            "sourceColumn": "VV242_SHANDL_TAR_OVUN_LSC_LC"
+          },
+          {
+            "name": "VV243_SEC_TR_TARIFOVUN_LSC_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV243_SEC_TR_TARIFOVUN_LSC_GC_GSAP"
+          },
+          {
+            "name": "VV243_SEC_TR_TARIFOVUN_LSC_LC",
+            "dataType": "double",
+            "sourceColumn": "VV243_SEC_TR_TARIFOVUN_LSC_LC"
+          },
+          {
+            "name": "VV244_SEC_TRANS_TARIFFLSC2_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV244_SEC_TRANS_TARIFFLSC2_GC_GSAP"
+          },
+          {
+            "name": "VV244_SEC_TRANS_TARIFFLSC2_LC",
+            "dataType": "double",
+            "sourceColumn": "VV244_SEC_TRANS_TARIFFLSC2_LC"
+          },
+          {
+            "name": "VV245_TRANSFER_PRICE_LSC2_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV245_TRANSFER_PRICE_LSC2_GC_GSAP"
+          },
+          {
+            "name": "VV245_TRANSFER_PRICE_LSC2_LC",
+            "dataType": "double",
+            "sourceColumn": "VV245_TRANSFER_PRICE_LSC2_LC"
+          },
+          {
+            "name": "VV500_3RD_PARTY_PURCHASES_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV500_3RD_PARTY_PURCHASES_GC_GSAP"
+          },
+          {
+            "name": "VV500_3RD_PARTY_PURCHASES_LC",
+            "dataType": "double",
+            "sourceColumn": "VV500_3RD_PARTY_PURCHASES_LC"
+          },
+          {
+            "name": "VV521_SDA_REBATES_GC_GSAP",
+            "dataType": "double",
+            "sourceColumn": "VV521_SDA_REBATES_GC_GSAP"
+          },
+          {
+            "name": "VV521_SDA_REBATES_LC",
+            "dataType": "double",
+            "sourceColumn": "VV521_SDA_REBATES_LC"
+          },
+          {
+            "name": "CUSTOMER_MAPPING_CUSTOMER_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CUSTOMER_CODE"
+          },
+          {
+            "name": "SHIP_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "SOLD_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "CUSTOMER_MAPPING_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CPST_CODE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "BILLING_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "BILLING_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CREDIT_CHECK_CODE",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_CODE"
+          },
+          {
+            "name": "NTC_IND_CODE",
+            "dataType": "string",
+            "sourceColumn": "NTC_IND_CODE"
+          },
+          {
+            "name": "CHANNEL_MAP_ID",
+            "dataType": "int64",
+            "sourceColumn": "CHANNEL_MAP_ID"
+          },
+          {
+            "name": "OPERATING_AREA_ID",
+            "dataType": "int64",
+            "sourceColumn": "OPERATING_AREA_ID"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_SALES_PROFITABILITY_DAILY_FACT = Source{[Schema=\"app\",Item=\"vw_SALES_PROFITABILITY_DAILY_FACT\"]}[Data]",
+                "in",
+                "    app_vw_SALES_PROFITABILITY_DAILY_FACT"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "INVOICED_C3_CM",
+            "expression": "CALCULATE([SUM_INVOICED_C3],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))"
+          },
+          {
+            "name": "INVOICED_UNIT_C3",
+            "expression": "DIVIDE([SUM_INVOICED_C3],[SUM_INVOICED_VOL],BLANK ())"
+          },
+          {
+            "name": "INVOICED_UNIT_C3_CM",
+            "expression": "DIVIDE([INVOICED_C3_CM],[INVOICED_VOL_CM],BLANK ())"
+          },
+          {
+            "name": "INVOICED_C3_LC_CM",
+            "expression": "CALCULATE([SUM_INVOICED_C3_LC], FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))"
+          },
+          {
+            "name": "INVOICED_UNIT_C3_LC",
+            "expression": "DIVIDE([SUM_INVOICED_C3_LC],[SUM_INVOICED_VOL],BLANK ())"
+          },
+          {
+            "name": "INVOICED_UNIT_C3_LC_CM",
+            "expression": "DIVIDE([INVOICED_C3_LC_CM],[INVOICED_VOL_CM],BLANK ())"
+          },
+          {
+            "name": "INVOICED_C3_PM",
+            "expression": "CALCULATE([SUM_INVOICED_C3],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[PM_IND]=1))"
+          },
+          {
+            "name": "INVOICED_UNIT_C3_PM",
+            "expression": "DIVIDE([INVOICED_C3_PM],[INVOICED_VOL_PM],BLANK ())"
+          },
+          {
+            "name": "KNOWN_UC3",
+            "expression": [
+              "IF(",
+              "([INVOICED_UNIT_C3_CM]=Blank()||[INVOICED_UNIT_C3_CM]=0)",
+              ",[INVOICED_UNIT_C3_PM],[INVOICED_UNIT_C3_CM]",
+              ")"
+            ]
+          },
+          {
+            "name": "INVOICED_C3_LC_PM",
+            "expression": "CALCULATE([SUM_INVOICED_C3_LC],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[PM_IND]=1))"
+          },
+          {
+            "name": "INVOICED_UNIT_C3_LC_PM",
+            "expression": "DIVIDE([INVOICED_C3_LC_PM],[INVOICED_VOL_PM],BLANK ())"
+          },
+          {
+            "name": "KNOWN_UC3_LC",
+            "expression": [
+              "IF (",
+              "    (",
+              "        [INVOICED_UNIT_C3_LC_CM] = BLANK ()",
+              "            || [INVOICED_UNIT_C3_LC_CM] = 0",
+              "    ),",
+              "    [INVOICED_UNIT_C3_LC_PM],",
+              "    [INVOICED_UNIT_C3_LC_CM]",
+              ")"
+            ]
+          },
+          {
+            "name": "SUM_INVOICED_C3",
+            "expression": [
+              "SUM('app vw_SALES_PROFITABILITY_DAILY_FACT'[C3_CASH_DELIVERED_MARGIN_GC_GSAP])",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "SUM_INVOICED_VOL",
+            "expression": [
+              "SUM('app vw_SALES_PROFITABILITY_DAILY_FACT'[VV002_VOLUME_IN_L15])",
+              "",
+              ""
+            ]
+          },
+          {
+            "name": "INVOICED_VOL_CM",
+            "expression": "CALCULATE([SUM_INVOICED_VOL],'app vw_DATE_DIM'[CM_IND]=1)"
+          },
+          {
+            "name": "SUM_INVOICED_C3_LC",
+            "expression": "SUM('app vw_SALES_PROFITABILITY_DAILY_FACT'[C3_CASH_DELIVERED_MARGIN_LC])"
+          },
+          {
+            "name": "INVOICED_VOL_PM",
+            "expression": "CALCULATE([SUM_INVOICED_VOL], FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[PM_IND]=1))"
+          },
+          {
+            "name": "SUM_NET_SALES_PROCEEDS",
+            "expression": "SUM('app vw_SALES_PROFITABILITY_DAILY_FACT'[P1000_PROCEEDS_GC_GSAP])"
+          },
+          {
+            "name": "SUM_NET_SALES_PROCEEDS_LC",
+            "expression": "SUM('app vw_SALES_PROFITABILITY_DAILY_FACT'[P1000_PROCEEDS_LC])"
+          }
+        ]
+      },
+      {
+        "name": "app vw_BUSINESS_TRANSACTION_DIM",
+        "columns": [
+          {
+            "name": "BUSINESS_TRANSACTION_CODE",
+            "dataType": "string",
+            "sourceColumn": "BUSINESS_TRANSACTION_CODE"
+          },
+          {
+            "name": "BUSINESS_TRANSACTION_NAME",
+            "dataType": "string",
+            "sourceColumn": "BUSINESS_TRANSACTION_NAME"
+          },
+          {
+            "name": "BUSINESS_TRANSACTION_CODE_NAME",
+            "dataType": "string",
+            "sourceColumn": "BUSINESS_TRANSACTION_CODE_NAME"
+          },
+          {
+            "type": "calculated",
+            "name": "STL_Dummy",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "IF('app vw_BUSINESS_TRANSACTION_DIM'[BUSINESS_TRANSACTION_CODE]=\"B01\",\"abcd\",IF('app vw_BUSINESS_TRANSACTION_DIM'[BUSINESS_TRANSACTION_CODE]=\"B99\",\"defg\",\"wxyz\"))"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_BUSINESS_TRANSACTION_DIM = Source{[Schema=\"app\",Item=\"vw_BUSINESS_TRANSACTION_DIM\"]}[Data]",
+                "in",
+                "    app_vw_BUSINESS_TRANSACTION_DIM"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "DUMMY_LAST_PROCESS",
+            "expression": " NOW()"
+          }
+        ]
+      },
+      {
+        "name": "app vw_MATERIAL_DIM",
+        "columns": [
+          {
+            "name": "MATERIAL_NO_DIM",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NO_DIM"
+          },
+          {
+            "name": "MATERIAL_NAME",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NAME"
+          },
+          {
+            "name": "DEMAND_PLANNING_FAMILY_CODE",
+            "dataType": "string",
+            "sourceColumn": "DEMAND_PLANNING_FAMILY_CODE"
+          },
+          {
+            "name": "DEMAND_PLANNING_FAMILY_NAME",
+            "dataType": "string",
+            "sourceColumn": "DEMAND_PLANNING_FAMILY_NAME"
+          },
+          {
+            "name": "MARKET_TYPE_CODE",
+            "dataType": "string",
+            "sourceColumn": "MARKET_TYPE_CODE"
+          },
+          {
+            "name": "MARKET_TYPE_NAME",
+            "dataType": "string",
+            "sourceColumn": "MARKET_TYPE_NAME"
+          },
+          {
+            "name": "PACK_SIZE_CODE",
+            "dataType": "string",
+            "sourceColumn": "PACK_SIZE_CODE"
+          },
+          {
+            "name": "PACK_SIZE_NAME",
+            "dataType": "string",
+            "sourceColumn": "PACK_SIZE_NAME"
+          },
+          {
+            "name": "PACK_FORM_AND_STYLE_CODE",
+            "dataType": "string",
+            "sourceColumn": "PACK_FORM_AND_STYLE_CODE"
+          },
+          {
+            "name": "PACK_FORM_AND_STYLE_NAME",
+            "dataType": "string",
+            "sourceColumn": "PACK_FORM_AND_STYLE_NAME"
+          },
+          {
+            "name": "PRODUCT_CLASS_CODE",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_CLASS_CODE"
+          },
+          {
+            "name": "PRODUCT_CLASS_NAME",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_CLASS_NAME"
+          },
+          {
+            "name": "PRODUCT_FAMILY_CODE",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_FAMILY_CODE"
+          },
+          {
+            "name": "PRODUCT_FAMILY_NAME",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_FAMILY_NAME"
+          },
+          {
+            "name": "PRODUCT_LOB_CODE",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_LOB_CODE"
+          },
+          {
+            "name": "PRODUCT_LOB_NAME",
+            "dataType": "string",
+            "sourceColumn": "PRODUCT_LOB_NAME"
+          },
+          {
+            "name": "SALEABLE_PRODUCT_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALEABLE_PRODUCT_CODE"
+          },
+          {
+            "name": "SALEABLE_PRODUCT_NAME",
+            "dataType": "string",
+            "sourceColumn": "SALEABLE_PRODUCT_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_MATERIAL_DIM = Source{[Schema=\"app\",Item=\"vw_MATERIAL_DIM\"]}[Data]",
+                "in",
+                "    app_vw_MATERIAL_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_PROFIT_CENTRE_DIM",
+        "columns": [
+          {
+            "name": "PROFIT_CENTRE_CODE",
+            "dataType": "string",
+            "sourceColumn": "PROFIT_CENTRE_CODE"
+          },
+          {
+            "name": "PROFIT_CENTRE_NAME",
+            "dataType": "string",
+            "sourceColumn": "PROFIT_CENTRE_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_PROFIT_CENTRE_DIM = Source{[Schema=\"app\",Item=\"vw_PROFIT_CENTRE_DIM\"]}[Data]",
+                "in",
+                "    app_vw_PROFIT_CENTRE_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_SHIP_TO_CUSTOMER_DIM",
+        "columns": [
+          {
+            "name": "SHIP_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL3_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL3_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL3_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL3_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL6_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL6_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL6_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL6_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL7_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL7_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL7_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL7_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL8_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL8_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL8_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL8_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL1_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL1_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL1_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL1_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL2_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL2_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL2_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL2_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL4_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL4_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL4_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL4_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL5_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL5_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL5_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL5_NAME"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_CODE"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_NAME"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_OLD_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_OLD_CODE"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_OLD_DESC",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_OLD_DESC"
+          },
+          {
+            "name": "CHANNEL_IDENTITY_CODE",
+            "dataType": "string",
+            "sourceColumn": "CHANNEL_IDENTITY_CODE"
+          },
+          {
+            "name": "CHANNEL_IDENTITY_NAME",
+            "dataType": "string",
+            "sourceColumn": "CHANNEL_IDENTITY_NAME"
+          },
+          {
+            "name": "CUSTOMER_BANDING_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_BANDING_CODE"
+          },
+          {
+            "name": "CUSTOMER_BANDING_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_BANDING_NAME"
+          },
+          {
+            "name": "CUSTOMER_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_CODE"
+          },
+          {
+            "name": "CUSTOMER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_NAME"
+          },
+          {
+            "name": "CUSTOMER_SEGMENT_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SEGMENT_CODE"
+          },
+          {
+            "name": "CUSTOMER_SEGMENT_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SEGMENT_NAME"
+          },
+          {
+            "name": "DISTRIBUTION_CHANNEL_CODE",
+            "dataType": "string",
+            "sourceColumn": "DISTRIBUTION_CHANNEL_CODE"
+          },
+          {
+            "name": "DISTRIBUTION_CHANNEL_NAME",
+            "dataType": "string",
+            "sourceColumn": "DISTRIBUTION_CHANNEL_NAME"
+          },
+          {
+            "name": "DIVISION_CODE",
+            "dataType": "string",
+            "sourceColumn": "DIVISION_CODE"
+          },
+          {
+            "name": "DIVISION_NAME",
+            "dataType": "string",
+            "sourceColumn": "DIVISION_NAME"
+          },
+          {
+            "name": "NEGOTIATION_PARTNER_ACCOUNT_CODE",
+            "dataType": "string",
+            "sourceColumn": "NEGOTIATION_PARTNER_ACCOUNT_CODE"
+          },
+          {
+            "name": "NEGOTIATION_PARTNER_ACCOUNT_NAME",
+            "dataType": "string",
+            "sourceColumn": "NEGOTIATION_PARTNER_ACCOUNT_NAME"
+          },
+          {
+            "name": "PARENT_CODE",
+            "dataType": "string",
+            "sourceColumn": "PARENT_CODE"
+          },
+          {
+            "name": "PARENT_NAME",
+            "dataType": "string",
+            "sourceColumn": "PARENT_NAME"
+          },
+          {
+            "name": "POSTAL_CODE",
+            "dataType": "string",
+            "sourceColumn": "POSTAL_CODE"
+          },
+          {
+            "name": "SALES_ORGANISATION_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORGANISATION_CODE"
+          },
+          {
+            "name": "SALES_ORGANISATION_DESC",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORGANISATION_DESC"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_NAME",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_NAME"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_OLD_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_OLD_CODE"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_OLD_NAME",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_OLD_NAME"
+          },
+          {
+            "name": "ZSRAMEMP",
+            "dataType": "string",
+            "sourceColumn": "ZSRAMEMP"
+          },
+          {
+            "name": "ZSRAMEMP_NAME",
+            "dataType": "string",
+            "sourceColumn": "ZSRAMEMP_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_SHIP_TO_CUSTOMER_DIM = Source{[Schema=\"app\",Item=\"vw_SHIP_TO_CUSTOMER_DIM\"]}[Data]",
+                "in",
+                "    app_vw_SHIP_TO_CUSTOMER_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_SOLD_TO_CUSTOMER_DIM",
+        "columns": [
+          {
+            "name": "SOLD_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL3_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL3_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL3_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL3_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL6_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL6_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL6_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL6_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL7_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL7_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL7_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL7_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL8_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL8_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL8_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL8_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL1_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL1_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL1_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL1_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL2_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL2_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL2_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL2_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL4_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL4_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL4_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL4_NAME"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL5_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL5_CODE"
+          },
+          {
+            "name": "ACC_MGR_SALES_HIERARCHY_LEVEL5_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACC_MGR_SALES_HIERARCHY_LEVEL5_NAME"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_CODE"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_NAME",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_NAME"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_OLD_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_OLD_CODE"
+          },
+          {
+            "name": "ACCOUNT_MANAGER_OLD_DESC",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_MANAGER_OLD_DESC"
+          },
+          {
+            "name": "CHANNEL_IDENTITY_CODE",
+            "dataType": "string",
+            "sourceColumn": "CHANNEL_IDENTITY_CODE"
+          },
+          {
+            "name": "CHANNEL_IDENTITY_NAME",
+            "dataType": "string",
+            "sourceColumn": "CHANNEL_IDENTITY_NAME"
+          },
+          {
+            "name": "CUSTOMER_BANDING_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_BANDING_CODE"
+          },
+          {
+            "name": "CUSTOMER_BANDING_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_BANDING_NAME"
+          },
+          {
+            "name": "CUSTOMER_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_CODE"
+          },
+          {
+            "name": "CUSTOMER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_NAME"
+          },
+          {
+            "name": "CUSTOMER_SEGMENT_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SEGMENT_CODE"
+          },
+          {
+            "name": "CUSTOMER_SEGMENT_NAME",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SEGMENT_NAME"
+          },
+          {
+            "name": "DISTRIBUTION_CHANNEL_CODE",
+            "dataType": "string",
+            "sourceColumn": "DISTRIBUTION_CHANNEL_CODE"
+          },
+          {
+            "name": "DISTRIBUTION_CHANNEL_NAME",
+            "dataType": "string",
+            "sourceColumn": "DISTRIBUTION_CHANNEL_NAME"
+          },
+          {
+            "name": "DIVISION_CODE",
+            "dataType": "string",
+            "sourceColumn": "DIVISION_CODE"
+          },
+          {
+            "name": "DIVISION_NAME",
+            "dataType": "string",
+            "sourceColumn": "DIVISION_NAME"
+          },
+          {
+            "name": "NEGOTIATION_PARTNER_ACCOUNT_CODE",
+            "dataType": "string",
+            "sourceColumn": "NEGOTIATION_PARTNER_ACCOUNT_CODE"
+          },
+          {
+            "name": "NEGOTIATION_PARTNER_ACCOUNT_NAME",
+            "dataType": "string",
+            "sourceColumn": "NEGOTIATION_PARTNER_ACCOUNT_NAME"
+          },
+          {
+            "name": "PARENT_CODE",
+            "dataType": "string",
+            "sourceColumn": "PARENT_CODE"
+          },
+          {
+            "name": "PARENT_NAME",
+            "dataType": "string",
+            "sourceColumn": "PARENT_NAME"
+          },
+          {
+            "name": "POSTAL_CODE",
+            "dataType": "string",
+            "sourceColumn": "POSTAL_CODE"
+          },
+          {
+            "name": "SALES_ORGANISATION_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORGANISATION_CODE"
+          },
+          {
+            "name": "SALES_ORGANISATION_DESC",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORGANISATION_DESC"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_NAME",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_NAME"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_OLD_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_OLD_CODE"
+          },
+          {
+            "name": "SALES_REPRESENTATIVE_OLD_NAME",
+            "dataType": "string",
+            "sourceColumn": "SALES_REPRESENTATIVE_OLD_NAME"
+          },
+          {
+            "name": "ZSRAMEMP",
+            "dataType": "string",
+            "sourceColumn": "ZSRAMEMP"
+          },
+          {
+            "name": "ZSRAMEMP_NAME",
+            "dataType": "string",
+            "sourceColumn": "ZSRAMEMP_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_SOLD_TO_CUSTOMER_DIM = Source{[Schema=\"app\",Item=\"vw_SOLD_TO_CUSTOMER_DIM\"]}[Data]",
+                "in",
+                "    app_vw_SOLD_TO_CUSTOMER_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_DATE_DIM",
+        "dataCategory": "Time",
+        "columns": [
+          {
+            "name": "Date_ID",
+            "dataType": "int64",
+            "sourceColumn": "Date_ID"
+          },
+          {
+            "name": "Date",
+            "dataType": "dateTime",
+            "isKey": true,
+            "sourceColumn": "Date",
+            "formatString": "mm/dd/yyyy",
+            "annotations": [
+              {
+                "name": "TabularEditor_MarkAsDateKey",
+                "value": "1"
+              }
+            ]
+          },
+          {
+            "name": "DateName",
+            "dataType": "string",
+            "sourceColumn": "DateName",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "DayOfMonth",
+            "dataType": "int64",
+            "sourceColumn": "DayOfMonth",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "DayName",
+            "dataType": "string",
+            "sourceColumn": "DayName"
+          },
+          {
+            "name": "DayOfYear",
+            "dataType": "string",
+            "sourceColumn": "DayOfYear"
+          },
+          {
+            "name": "WeekOfMonth",
+            "dataType": "string",
+            "sourceColumn": "WeekOfMonth",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "WeekOfYear",
+            "dataType": "string",
+            "sourceColumn": "WeekOfYear"
+          },
+          {
+            "name": "WeekOfYearName",
+            "dataType": "string",
+            "sourceColumn": "WeekOfYearName"
+          },
+          {
+            "name": "Month",
+            "dataType": "string",
+            "sourceColumn": "Month",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "MonthName",
+            "dataType": "string",
+            "sourceColumn": "MonthName",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "Quarter",
+            "dataType": "string",
+            "sourceColumn": "Quarter"
+          },
+          {
+            "name": "Year",
+            "dataType": "string",
+            "sourceColumn": "Year"
+          },
+          {
+            "name": "MonthYear",
+            "dataType": "string",
+            "sourceColumn": "MonthYear",
+            "sortByColumn": "Date"
+          },
+          {
+            "name": "MMYYYY",
+            "dataType": "string",
+            "sourceColumn": "MMYYYY"
+          },
+          {
+            "name": "CM_IND",
+            "dataType": "int64",
+            "sourceColumn": "CM_IND"
+          },
+          {
+            "name": "PM_IND",
+            "dataType": "int64",
+            "sourceColumn": "PM_IND"
+          },
+          {
+            "type": "calculated",
+            "name": "Numeric_Day",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "DAY('app vw_DATE_DIM'[Date])"
+          },
+          {
+            "name": "DayNameFull",
+            "dataType": "string",
+            "sourceColumn": "DayNameFull",
+            "sortByColumn": "Date"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_DATE_DIM = Source{[Schema=\"app\",Item=\"vw_DATE_DIM\"]}[Data]",
+                "in",
+                "    app_vw_DATE_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_COUNTRY_DIM",
+        "columns": [
+          {
+            "name": "COMPANY_CODE",
+            "dataType": "string",
+            "sourceColumn": "COMPANY_CODE"
+          },
+          {
+            "name": "COUNTRY_BUSINESS_NAME",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_BUSINESS_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_COUNTRY_DIM = Source{[Schema=\"app\",Item=\"vw_COUNTRY_DIM\"]}[Data]",
+                "in",
+                "    app_vw_COUNTRY_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_AGING_RANGE_DIM",
+        "columns": [
+          {
+            "name": "AGING_RANGE_DESC",
+            "dataType": "string",
+            "sourceColumn": "AGING_RANGE_DESC"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_AGING_RANGE_DIM = Source{[Schema=\"app\",Item=\"vw_AGING_RANGE_DIM\"]}[Data]",
+                "in",
+                "    app_vw_AGING_RANGE_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_BILLING_BLOCK_STATUS_DIM",
+        "columns": [
+          {
+            "name": "BILLING_BLOCK_STATUS_CODE",
+            "dataType": "int64",
+            "sourceColumn": "BILLING_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "BILLING_BLOCK_STATUS_NAME",
+            "dataType": "string",
+            "sourceColumn": "BILLING_BLOCK_STATUS_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_BILLING_BLOCK_STATUS_DIM = Source{[Schema=\"app\",Item=\"vw_BILLING_BLOCK_STATUS_DIM\"]}[Data]",
+                "in",
+                "    app_vw_BILLING_BLOCK_STATUS_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_CREDIT_CHECK_DIM",
+        "columns": [
+          {
+            "name": "OVERALL_CREDIT_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "OVERALL_CREDIT_STATUS_CODE"
+          },
+          {
+            "name": "CREDIT_CHECK_STATUS",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_STATUS"
+          },
+          {
+            "name": "CREDIT_CHECK_TEXT",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_TEXT"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_CREDIT_CHECK_DIM = Source{[Schema=\"app\",Item=\"vw_CREDIT_CHECK_DIM\"]}[Data]",
+                "in",
+                "    app_vw_CREDIT_CHECK_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_DELIVERY_BLOCK_STATUS_DIM",
+        "columns": [
+          {
+            "name": "DELIVERY_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_REASON",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_REASON"
+          },
+          {
+            "name": "DELIVERY_BLOCK_STATUS_NAME",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_DELIVERY_BLOCK_STATUS_DIM = Source{[Schema=\"app\",Item=\"vw_DELIVERY_BLOCK_STATUS_DIM\"]}[Data]",
+                "in",
+                "    app_vw_DELIVERY_BLOCK_STATUS_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_SALES_ORDER_DOCUMENT_DIM",
+        "columns": [
+          {
+            "name": "SALES_ORDER_NO",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_NO"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_SALES_ORDER_DOCUMENT_DIM = Source{[Schema=\"app\",Item=\"vw_SALES_ORDER_DOCUMENT_DIM\"]}[Data]",
+                "in",
+                "    app_vw_SALES_ORDER_DOCUMENT_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_NTC_DIM",
+        "columns": [
+          {
+            "name": "NTC_NON_NTC_STATUS",
+            "dataType": "string",
+            "sourceColumn": "NTC_NON_NTC_STATUS"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_NTC_DIM = Source{[Schema=\"app\",Item=\"vw_NTC_DIM\"]}[Data]",
+                "in",
+                "    app_vw_NTC_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_GC_BILLING_FACT",
+        "columns": [
+          {
+            "name": "OPERATING_AREA_CODE",
+            "dataType": "int64",
+            "sourceColumn": "OPERATING_AREA_CODE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CHANNEL_MAP_ID",
+            "dataType": "int64",
+            "sourceColumn": "CHANNEL_MAP_ID"
+          },
+          {
+            "name": "BILLING_DATE_ID",
+            "dataType": "string",
+            "sourceColumn": "BILLING_DATE_ID"
+          },
+          {
+            "name": "SHIP_TO_SALES_REPRESENTATIVE_CODE",
+            "dataType": "int64",
+            "sourceColumn": "SHIP_TO_SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "MATERIAL_NO",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NO"
+          },
+          {
+            "name": "BILLING_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "BILLING_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CREDIT_CHECK_CODE",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_CODE"
+          },
+          {
+            "name": "NTC_IND_CODE",
+            "dataType": "string",
+            "sourceColumn": "NTC_IND_CODE"
+          },
+          {
+            "name": "AGING_RANGE_DESC",
+            "dataType": "string",
+            "sourceColumn": "AGING_RANGE_DESC"
+          },
+          {
+            "name": "SHIP_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "SOLD_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "PLANT_CODE",
+            "dataType": "int64",
+            "sourceColumn": "PLANT_CODE"
+          },
+          {
+            "name": "SALES_ORDER_ITEM_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_ITEM_CPST_CODE"
+          },
+          {
+            "name": "COUNTRY_NAME",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_NAME"
+          },
+          {
+            "name": "CLUSTER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CLUSTER_NAME"
+          },
+          {
+            "name": "REGION_NAME",
+            "dataType": "string",
+            "sourceColumn": "REGION_NAME"
+          },
+          {
+            "name": "SALES_ORDER_NUMBER",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_NUMBER"
+          },
+          {
+            "name": "CUSTOMER_MAPPING_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CPST_CODE"
+          },
+          {
+            "name": "DEL_REF_DOC_NO",
+            "dataType": "string",
+            "sourceColumn": "DEL_REF_DOC_NO"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_GC_BILLING_FACT = Source{[Schema=\"app\",Item=\"vw_GC_BILLING_FACT\"]}[Data]",
+                "in",
+                "    app_vw_GC_BILLING_FACT"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_GC_SALES_ORDER_FACT",
+        "columns": [
+          {
+            "name": "SALES_ORDER_ITEM_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_ITEM_CPST_CODE"
+          },
+          {
+            "name": "DAILY_SALES_ORDER_TXN_ID",
+            "dataType": "int64",
+            "sourceColumn": "DAILY_SALES_ORDER_TXN_ID"
+          },
+          {
+            "name": "MATERIAL_NO",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NO"
+          },
+          {
+            "name": "SOLD_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "SHIP_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "OPERATING_AREA_ID",
+            "dataType": "int64",
+            "sourceColumn": "OPERATING_AREA_ID"
+          },
+          {
+            "name": "SCHEDULED_DEL_DATE",
+            "dataType": "string",
+            "sourceColumn": "SCHEDULED_DEL_DATE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CHANNEL_MAP_ID",
+            "dataType": "int64",
+            "sourceColumn": "CHANNEL_MAP_ID"
+          },
+          {
+            "name": "SALES_ORDER_NUMBER",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_NUMBER"
+          },
+          {
+            "name": "SALES_DOC_ITEM_NO",
+            "dataType": "string",
+            "sourceColumn": "SALES_DOC_ITEM_NO"
+          },
+          {
+            "name": "BILLING_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "BILLING_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "DELIVERY_PRIORITY_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_PRIORITY_CODE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_CODE"
+          },
+          {
+            "name": "CREDIT_CHECK_CODE",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_CODE"
+          },
+          {
+            "name": "NTC_IND_CODE",
+            "dataType": "string",
+            "sourceColumn": "NTC_IND_CODE"
+          },
+          {
+            "name": "AGING_RANGE_DESC",
+            "dataType": "string",
+            "sourceColumn": "AGING_RANGE_DESC"
+          },
+          {
+            "name": "PLANT_CODE",
+            "dataType": "string",
+            "sourceColumn": "PLANT_CODE"
+          },
+          {
+            "name": "CURRENT_SHIP_TO_SALES_REPRESENTATIVE_CODE",
+            "dataType": "int64",
+            "sourceColumn": "CURRENT_SHIP_TO_SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "PREVIOUS_SHIP_TO_SALES_REPRESENTATIVE_CODE",
+            "dataType": "int64",
+            "sourceColumn": "PREVIOUS_SHIP_TO_SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "ACCOUNT_ASSIGNMENT_GROUP_CODE",
+            "dataType": "string",
+            "sourceColumn": "ACCOUNT_ASSIGNMENT_GROUP_CODE"
+          },
+          {
+            "name": "SALES_DOCUMENT_TYPE_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_DOCUMENT_TYPE_CODE"
+          },
+          {
+            "name": "BACK_ORDER_IND",
+            "dataType": "int64",
+            "sourceColumn": "BACK_ORDER_IND"
+          },
+          {
+            "name": "AGING_TYPE_DESC",
+            "dataType": "string",
+            "sourceColumn": "AGING_TYPE_DESC"
+          },
+          {
+            "name": "COUNTRY_NAME",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_NAME"
+          },
+          {
+            "name": "CLUSTER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CLUSTER_NAME"
+          },
+          {
+            "name": "REGION_NAME",
+            "dataType": "string",
+            "sourceColumn": "REGION_NAME"
+          },
+          {
+            "name": "SALES_ITEM_FIRST_DATE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ITEM_FIRST_DATE"
+          },
+          {
+            "name": "ITEM_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "ITEM_VOLUME"
+          },
+          {
+            "name": "VOLUME_UOM",
+            "dataType": "string",
+            "sourceColumn": "VOLUME_UOM"
+          },
+          {
+            "name": "BACK_ORDER",
+            "dataType": "double",
+            "sourceColumn": "BACK_ORDER"
+          },
+          {
+            "name": "TOTAL_ORDER_QTY_IN_SALES_UNIT",
+            "dataType": "double",
+            "sourceColumn": "TOTAL_ORDER_QTY_IN_SALES_UNIT"
+          },
+          {
+            "name": "SALES_ITEM_DAYS_LATE",
+            "dataType": "int64",
+            "sourceColumn": "SALES_ITEM_DAYS_LATE"
+          },
+          {
+            "name": "SCHEDULE_LINE_COUNT",
+            "dataType": "int64",
+            "sourceColumn": "SCHEDULE_LINE_COUNT"
+          },
+          {
+            "name": "SCHEDULED_DAYS_DIFF",
+            "dataType": "int64",
+            "sourceColumn": "SCHEDULED_DAYS_DIFF"
+          },
+          {
+            "name": "CUSTOMER_MAPPING_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CPST_CODE"
+          },
+          {
+            "name": "SO_RECORD_CREATE_DATE",
+            "dataType": "dateTime",
+            "sourceColumn": "SO_RECORD_CREATE_DATE",
+            "formatString": "mm/dd/yyyy"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_GC_SALES_ORDER_FACT = Source{[Schema=\"app\",Item=\"vw_GC_SALES_ORDER_FACT\"]}[Data]",
+                "in",
+                "    app_vw_GC_SALES_ORDER_FACT"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "SUM_BACK_ORDER_VOL",
+            "expression": "SUM('app vw_GC_SALES_ORDER_FACT'[BACK_ORDER])"
+          },
+          {
+            "name": "BACK_ORDER_VOL_CM",
+            "expression": "CALCULATE([SUM_BACK_ORDER_VOL],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))"
+          },
+          {
+            "name": "BACK_ORDER_C3_CM",
+            "expression": "[BACK_ORDER_VOL_CM]*[KNOWN_UC3]"
+          },
+          {
+            "name": "BACK_ORDER_C3",
+            "expression": "[SUM_BACK_ORDER_VOL]*[KNOWN_UC3]"
+          },
+          {
+            "name": "BACK_ORDER_C3_LC",
+            "expression": "[SUM_BACK_ORDER_VOL]*[KNOWN_UC3_LC]"
+          },
+          {
+            "name": "MIN_SCHEDULED_DEL_DATE",
+            "expression": "MIN('app vw_GC_SALES_ORDER_FACT'[SCHEDULED_DEL_DATE])"
+          },
+          {
+            "name": "MAX_SCHEDULED_DEL_DATE",
+            "expression": "MAX('app vw_GC_SALES_ORDER_FACT'[SCHEDULED_DEL_DATE])"
+          }
+        ]
+      },
+      {
+        "name": "app vw_GC_DELIVERY_FACT",
+        "columns": [
+          {
+            "name": "OPERATING_AREA_CODE",
+            "dataType": "int64",
+            "sourceColumn": "OPERATING_AREA_CODE"
+          },
+          {
+            "name": "DELIVERY_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CHANNEL_MAP_ID",
+            "dataType": "int64",
+            "sourceColumn": "CHANNEL_MAP_ID"
+          },
+          {
+            "name": "DATE_ID",
+            "dataType": "string",
+            "sourceColumn": "DATE_ID"
+          },
+          {
+            "name": "SHIP_TO_SALES_REPRESENTATIVE_CODE",
+            "dataType": "int64",
+            "sourceColumn": "SHIP_TO_SALES_REPRESENTATIVE_CODE"
+          },
+          {
+            "name": "MATERIAL_NO",
+            "dataType": "string",
+            "sourceColumn": "MATERIAL_NO"
+          },
+          {
+            "name": "BILLING_BLOCK_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "BILLING_BLOCK_STATUS_CODE"
+          },
+          {
+            "name": "CREDIT_CHECK_CODE",
+            "dataType": "string",
+            "sourceColumn": "CREDIT_CHECK_CODE"
+          },
+          {
+            "name": "NTC_IND_CODE",
+            "dataType": "string",
+            "sourceColumn": "NTC_IND_CODE"
+          },
+          {
+            "name": "LINE_DELIVERY_E2E_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "LINE_DELIVERY_E2E_STATUS_CODE"
+          },
+          {
+            "name": "AGING_RANGE_DESC",
+            "dataType": "string",
+            "sourceColumn": "AGING_RANGE_DESC"
+          },
+          {
+            "name": "SHIP_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "SOLD_TO_CUSTOMER_SALES_CODE",
+            "dataType": "string",
+            "sourceColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+          },
+          {
+            "name": "PLANT_CODE",
+            "dataType": "int64",
+            "sourceColumn": "PLANT_CODE"
+          },
+          {
+            "name": "SALES_ORDER_ITEM_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_ITEM_CPST_CODE"
+          },
+          {
+            "name": "ACTUAL_GOODS_MOVEMENT_DATE",
+            "dataType": "string",
+            "sourceColumn": "ACTUAL_GOODS_MOVEMENT_DATE"
+          },
+          {
+            "name": "PROOF_OF_DELIVERY_DATE",
+            "dataType": "string",
+            "sourceColumn": "PROOF_OF_DELIVERY_DATE"
+          },
+          {
+            "name": "VOLUME_UOM",
+            "dataType": "int64",
+            "sourceColumn": "VOLUME_UOM"
+          },
+          {
+            "name": "SHIPMENT_NO",
+            "dataType": "string",
+            "sourceColumn": "SHIPMENT_NO"
+          },
+          {
+            "name": "LOADING_END_DATE",
+            "dataType": "string",
+            "sourceColumn": "LOADING_END_DATE"
+          },
+          {
+            "name": "COUNTRY_NAME",
+            "dataType": "string",
+            "sourceColumn": "COUNTRY_NAME"
+          },
+          {
+            "name": "CLUSTER_NAME",
+            "dataType": "string",
+            "sourceColumn": "CLUSTER_NAME"
+          },
+          {
+            "name": "REGION_NAME",
+            "dataType": "string",
+            "sourceColumn": "REGION_NAME"
+          },
+          {
+            "name": "DELIVERY_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_CODE"
+          },
+          {
+            "name": "DELIVERED_ACTUAL_QTY_IN_SALES_UNIT",
+            "dataType": "double",
+            "sourceColumn": "DELIVERED_ACTUAL_QTY_IN_SALES_UNIT"
+          },
+          {
+            "name": "DELIVERY_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "DELIVERY_VOLUME"
+          },
+          {
+            "name": "ORDER_DELIVERY_QTY_DIFF",
+            "dataType": "int64",
+            "sourceColumn": "ORDER_DELIVERY_QTY_DIFF"
+          },
+          {
+            "name": "OPEN_ORDER_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "OPEN_ORDER_VOLUME"
+          },
+          {
+            "name": "READY_TO_DISPATCH_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "READY_TO_DISPATCH_VOLUME"
+          },
+          {
+            "name": "OPEN_UOR_VOLUME",
+            "dataType": "int64",
+            "sourceColumn": "OPEN_UOR_VOLUME"
+          },
+          {
+            "name": "INVOICED_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "INVOICED_VOLUME"
+          },
+          {
+            "name": "READY_TO_DISPATCH_NAME",
+            "dataType": "double",
+            "sourceColumn": "READY_TO_DISPATCH_NAME"
+          },
+          {
+            "name": "OPEN_ORDERED_OR_DELIVERED_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "OPEN_ORDERED_OR_DELIVERED_VOLUME"
+          },
+          {
+            "name": "OPEN_SHIPPED_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "OPEN_SHIPPED_VOLUME"
+          },
+          {
+            "name": "NOT_INVOICED_DELIVERED_QUANTITY",
+            "dataType": "double",
+            "sourceColumn": "NOT_INVOICED_DELIVERED_QUANTITY"
+          },
+          {
+            "name": "OPEN_QUANTITY",
+            "dataType": "double",
+            "sourceColumn": "OPEN_QUANTITY"
+          },
+          {
+            "name": "ORDERED_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "ORDERED_VOLUME"
+          },
+          {
+            "name": "OPEN_ORDERED_OR_SHIPPED_VOLUME",
+            "dataType": "int64",
+            "sourceColumn": "OPEN_ORDERED_OR_SHIPPED_VOLUME"
+          },
+          {
+            "name": "KNOWN_VOLUME",
+            "dataType": "double",
+            "sourceColumn": "KNOWN_VOLUME"
+          },
+          {
+            "name": "OPEN_UOR_VOL",
+            "dataType": "double",
+            "sourceColumn": "OPEN_UOR_VOL"
+          },
+          {
+            "name": "SALES_ORDER_NUMBER",
+            "dataType": "string",
+            "sourceColumn": "SALES_ORDER_NUMBER"
+          },
+          {
+            "name": "CUSTOMER_MAPPING_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CPST_CODE"
+          },
+          {
+            "name": "DEL_REUSABLE_LAST_DTM ",
+            "dataType": "int64",
+            "sourceColumn": "DEL_REUSABLE_LAST_DTM "
+          },
+          {
+            "name": "SO_REF_DOC_NO",
+            "dataType": "string",
+            "sourceColumn": "SO_REF_DOC_NO"
+          },
+          {
+            "name": "SO_REF_DOC_ITEM_NO ",
+            "dataType": "string",
+            "sourceColumn": "SO_REF_DOC_ITEM_NO "
+          },
+          {
+            "name": "ITEM_DELIVERTY_RELATED_BILLING_STATUS_CODE",
+            "dataType": "string",
+            "sourceColumn": "ITEM_DELIVERTY_RELATED_BILLING_STATUS_CODE"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_GC_DELIVERY_FACT = Source{[Schema=\"app\",Item=\"vw_GC_DELIVERY_FACT\"]}[Data]",
+                "in",
+                "    app_vw_GC_DELIVERY_FACT"
+              ]
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "READY_TO_DISPATCH_VOL_CM",
+            "expression": [
+              "CALCULATE([SUM_READY_TO_DISPATCH_VOL],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))",
+              ""
+            ]
+          },
+          {
+            "name": "ORDERED_C3",
+            "expression": "[SUM_ORDERED_VOL]*[KNOWN_UC3]"
+          },
+          {
+            "name": "ORDERED_UNIT_C3",
+            "expression": "DIVIDE([ORDERED_C3],[SUM_ORDERED_VOL],BLANK ())"
+          },
+          {
+            "name": "TOTAL_OPEN_UOR_VOL",
+            "expression": " [SUM_OPEN_UOR_VOL]+[SUM_READY_TO_DISPATCH_VOL]"
+          },
+          {
+            "name": "SUM_OPEN_UOR_VOL",
+            "expression": "SUM('app vw_GC_DELIVERY_FACT'[OPEN_UOR_VOL])"
+          },
+          {
+            "name": "OPEN_UOR_VOL_CM",
+            "expression": "CALCULATE([SUM_OPEN_UOR_VOL],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))"
+          },
+          {
+            "name": "TOTAL_OPEN_UOR_VOL_CM",
+            "expression": "[OPEN_UOR_VOL_CM]+[READY_TO_DISPATCH_VOL_CM]"
+          },
+          {
+            "name": "OPEN_UOR_C3_CM",
+            "expression": "[TOTAL_OPEN_UOR_VOL_CM]*[KNOWN_UC3]"
+          },
+          {
+            "name": "OPEN_UOR_VOL_CHART",
+            "expression": "[TOTAL_OPEN_UOR_VOL_CM]-[SUM_BACK_ORDER_VOL]"
+          },
+          {
+            "name": "OPEN_UOR_C3_CHART",
+            "expression": "[OPEN_UOR_VOL_CHART] * [KNOWN_UC3]"
+          },
+          {
+            "name": "OPEN_UOR_C3_LC_CM",
+            "expression": "[OPEN_UOR_VOL_CM]*[KNOWN_UC3_LC]"
+          },
+          {
+            "name": "OPEN_UOR_C3_LC_CHART",
+            "expression": "[OPEN_UOR_VOL_CHART] * [KNOWN_UC3_LC]"
+          },
+          {
+            "name": "ORDERED_C3_LC",
+            "expression": "[SUM_ORDERED_VOL]*[KNOWN_UC3_LC]"
+          },
+          {
+            "name": "ORDERED_UNIT_C3_LC",
+            "expression": "DIVIDE([ORDERED_C3_LC],[SUM_ORDERED_VOL],BLANK ())"
+          },
+          {
+            "name": "OPEN_ORDER_C3_LC",
+            "expression": "[TOTAL_OPEN_UOR_VOL_CM]*[KNOWN_UC3_LC]"
+          },
+          {
+            "name": "SUM_READY_TO_DISPATCH_VOL",
+            "expression": "SUM('app vw_GC_DELIVERY_FACT'[READY_TO_DISPATCH_VOLUME])"
+          },
+          {
+            "name": "SUM_ORDERED_VOL",
+            "expression": "SUM('app vw_GC_DELIVERY_FACT'[ORDERED_VOLUME])"
+          },
+          {
+            "name": "ORDERED_VOL_CM",
+            "expression": "CALCULATE([SUM_ORDERED_VOL],FILTER('app vw_DATE_DIM','app vw_DATE_DIM'[CM_IND]=1))"
+          }
+        ]
+      },
+      {
+        "name": "app vw_CHANNEL_DIM",
+        "columns": [
+          {
+            "name": "CUSTOMER_MAPPING_CPST_CODE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_MAPPING_CPST_CODE"
+          },
+          {
+            "name": "CUSTOMER_CHANNEL",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_CHANNEL"
+          },
+          {
+            "name": "CUSTOMER_SUB_CHANNEL_1",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SUB_CHANNEL_1"
+          },
+          {
+            "name": "CUSTOMER_SUB_CHANNEL_2",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SUB_CHANNEL_2"
+          },
+          {
+            "name": "CUSTOMER_SUB_CHANNEL_3",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_SUB_CHANNEL_3"
+          },
+          {
+            "name": "CUSTOMER_GROUP",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_GROUP"
+          },
+          {
+            "name": "CUSTOMER_TYPE",
+            "dataType": "string",
+            "sourceColumn": "CUSTOMER_TYPE"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_CHANNEL_DIM = Source{[Schema=\"app\",Item=\"vw_CHANNEL_DIM\"]}[Data]",
+                "in",
+                "    app_vw_CHANNEL_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "app vw_DELIVERY_PRIORITY_DIM",
+        "columns": [
+          {
+            "name": "DELIVERY_PRIORITY_CODE",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_PRIORITY_CODE"
+          },
+          {
+            "name": "DELIVERY_PRIORITY_NAME",
+            "dataType": "string",
+            "sourceColumn": "DELIVERY_PRIORITY_NAME"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    app_vw_DELIVERY_PRIORITY_DIM = Source{[Schema=\"app\",Item=\"vw_DELIVERY_PRIORITY_DIM\"]}[Data]",
+                "in",
+                "    app_vw_DELIVERY_PRIORITY_DIM"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "src_tbl_SALES_ORGANIZATION_NAME",
+        "columns": [
+          {
+            "name": "Sales_Organisation_Code",
+            "dataType": "string",
+            "sourceColumn": "Sales_Organisation_Code"
+          },
+          {
+            "name": "Sales_Organisation_Name",
+            "dataType": "string",
+            "sourceColumn": "Sales_Organisation_Name"
+          },
+          {
+            "name": "Language_Code",
+            "dataType": "string",
+            "sourceColumn": "Language_Code"
+          },
+          {
+            "name": "Client_Code",
+            "dataType": "string",
+            "sourceColumn": "Client_Code"
+          },
+          {
+            "name": "Last_Dtm",
+            "dataType": "string",
+            "sourceColumn": "Last_Dtm"
+          },
+          {
+            "name": "Last_Action_Cd",
+            "dataType": "string",
+            "sourceColumn": "Last_Action_Cd"
+          },
+          {
+            "name": "System_Id",
+            "dataType": "string",
+            "sourceColumn": "System_Id"
+          },
+          {
+            "type": "calculated",
+            "name": "Test",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "src_tbl_SALES_ORGANIZATION_NAME[System_Id]"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Partition",
+            "dataView": "full",
+            "source": {
+              "type": "m",
+              "expression": [
+                "let",
+                "    Source = #\"SQL/shell-01-eun-sq-giuylgxokswxqyaqpbwr database windows net;shell-01-eun-sqdb-\",",
+                "    src_tbl_SALES_ORGANIZATION_NAME = Source{[Schema=\"src\",Item=\"tbl_SALES_ORGANIZATION_NAME\"]}[Data]",
+                "in",
+                "    src_tbl_SALES_ORGANIZATION_NAME"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "d64fa66a-adbb-4054-8fca-e004bb5bc6c6",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "MATERIAL_NO",
+        "toTable": "app vw_MATERIAL_DIM",
+        "toColumn": "MATERIAL_NO_DIM"
+      },
+      {
+        "name": "b5936601-23e9-45d1-946a-eeb7147ae2e3",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "BUSINESS_TRANSACTION_CODE",
+        "toTable": "app vw_BUSINESS_TRANSACTION_DIM",
+        "toColumn": "BUSINESS_TRANSACTION_CODE"
+      },
+      {
+        "name": "1168927b-97fa-439f-bf0e-f74532ce5a5f",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "PROFIT_CENTRE_CODE",
+        "toTable": "app vw_PROFIT_CENTRE_DIM",
+        "toColumn": "PROFIT_CENTRE_CODE"
+      },
+      {
+        "name": "7a7a08fe-2bd3-427f-add9-5ffaacbf336d",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "CALENDAR_DAY",
+        "toTable": "app vw_DATE_DIM",
+        "toColumn": "Date_ID"
+      },
+      {
+        "name": "8bf897cc-6b4e-4164-ab1c-172d9f07f57f",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "SHIP_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SHIP_TO_CUSTOMER_DIM",
+        "toColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "af3b0c96-3418-4d9f-865f-d533a0a9ec1a",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "SOLD_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SOLD_TO_CUSTOMER_DIM",
+        "toColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "cec3bb13-6da4-4615-a372-ec9eaadab36f",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "SALES_ORDER_NO",
+        "toTable": "app vw_SALES_ORDER_DOCUMENT_DIM",
+        "toColumn": "SALES_ORDER_NO"
+      },
+      {
+        "name": "635f92b8-ef9f-4978-b362-9bb07b00449e",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "SCHEDULED_DEL_DATE",
+        "toTable": "app vw_DATE_DIM",
+        "toColumn": "Date_ID"
+      },
+      {
+        "name": "3e8184c1-fb87-4753-87e6-50f97b2bb007",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "SHIP_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SHIP_TO_CUSTOMER_DIM",
+        "toColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "6ecf11d1-51c1-476d-ba26-fea8b60909ff",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "SOLD_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SOLD_TO_CUSTOMER_DIM",
+        "toColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "6fa27b48-4dc0-4584-b9cc-43c9b4cc897c",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "MATERIAL_NO",
+        "toTable": "app vw_MATERIAL_DIM",
+        "toColumn": "MATERIAL_NO_DIM"
+      },
+      {
+        "name": "7d1b3940-4fd3-4061-8279-4c83145e82f6",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "SALES_ORDER_NUMBER",
+        "toTable": "app vw_SALES_ORDER_DOCUMENT_DIM",
+        "toColumn": "SALES_ORDER_NO"
+      },
+      {
+        "name": "8fff538b-f0f3-4149-b959-bc2f63d9a212",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "AGING_RANGE_DESC",
+        "toTable": "app vw_AGING_RANGE_DIM",
+        "toColumn": "AGING_RANGE_DESC"
+      },
+      {
+        "name": "a24b8bd6-3e7e-4beb-853e-0a19fa4744de",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "BILLING_BLOCK_STATUS_CODE",
+        "toTable": "app vw_BILLING_BLOCK_STATUS_DIM",
+        "toColumn": "BILLING_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "3dee6e2f-a233-4397-a539-34c93f6eefc7",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "CREDIT_CHECK_CODE",
+        "toTable": "app vw_CREDIT_CHECK_DIM",
+        "toColumn": "OVERALL_CREDIT_STATUS_CODE"
+      },
+      {
+        "name": "ad0529a1-b6a1-45d5-a500-feef2a0a054b",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "NTC_IND_CODE",
+        "toTable": "app vw_NTC_DIM",
+        "toColumn": "NTC_NON_NTC_STATUS"
+      },
+      {
+        "name": "98a9104e-992b-4caf-9611-898eb33cc5e9",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "DELIVERY_BLOCK_CODE",
+        "toTable": "app vw_DELIVERY_BLOCK_STATUS_DIM",
+        "toColumn": "DELIVERY_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "214b028f-d26b-43c5-9edb-5085456486d7",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "CUSTOMER_MAPPING_CPST_CODE",
+        "toTable": "app vw_CHANNEL_DIM",
+        "toColumn": "CUSTOMER_MAPPING_CPST_CODE"
+      },
+      {
+        "name": "cb7e6c06-e319-4c8d-9318-ab16d528fca9",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "BILLING_DATE_ID",
+        "toTable": "app vw_DATE_DIM",
+        "toColumn": "Date_ID"
+      },
+      {
+        "name": "56cc1133-20df-44a7-921f-ffb600334435",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "MATERIAL_NO",
+        "toTable": "app vw_MATERIAL_DIM",
+        "toColumn": "MATERIAL_NO_DIM"
+      },
+      {
+        "name": "f1d02c7c-7138-4071-9360-4d0ea6d9cc6c",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "SHIP_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SHIP_TO_CUSTOMER_DIM",
+        "toColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "2cdb0834-6781-43a7-8a00-b2aac6914910",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "SOLD_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SOLD_TO_CUSTOMER_DIM",
+        "toColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "0649c7a3-6f72-427a-baa0-ec53bdbb01fd",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "BILLING_BLOCK_STATUS_CODE",
+        "toTable": "app vw_BILLING_BLOCK_STATUS_DIM",
+        "toColumn": "BILLING_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "43baefb4-b169-4f70-8fc0-87fe76fa12a8",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "CREDIT_CHECK_CODE",
+        "toTable": "app vw_CREDIT_CHECK_DIM",
+        "toColumn": "OVERALL_CREDIT_STATUS_CODE"
+      },
+      {
+        "name": "238a806e-c701-4905-8edb-7d8194118911",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "NTC_IND_CODE",
+        "toTable": "app vw_NTC_DIM",
+        "toColumn": "NTC_NON_NTC_STATUS"
+      },
+      {
+        "name": "1474654b-ab11-4096-a1a4-09a0f7fcdf60",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "AGING_RANGE_DESC",
+        "toTable": "app vw_AGING_RANGE_DIM",
+        "toColumn": "AGING_RANGE_DESC"
+      },
+      {
+        "name": "00810646-2e03-4b28-9292-8efa4fe34226",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "DELIVERY_BLOCK_STATUS_CODE",
+        "toTable": "app vw_DELIVERY_BLOCK_STATUS_DIM",
+        "toColumn": "DELIVERY_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "c7a93173-a0e6-40ca-bc28-6de6a209fc64",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "DATE_ID",
+        "toTable": "app vw_DATE_DIM",
+        "toColumn": "Date_ID"
+      },
+      {
+        "name": "7855d5fa-be7c-4ba9-bddd-060dfbbacbf8",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "SHIP_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SHIP_TO_CUSTOMER_DIM",
+        "toColumn": "SHIP_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "c6ba78ec-d808-46f1-84b2-387bf7f8a4c7",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "SOLD_TO_CUSTOMER_SALES_CODE",
+        "toTable": "app vw_SOLD_TO_CUSTOMER_DIM",
+        "toColumn": "SOLD_TO_CUSTOMER_SALES_CODE"
+      },
+      {
+        "name": "ee70359f-3673-488b-ae21-bf2bef761532",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "MATERIAL_NO",
+        "toTable": "app vw_MATERIAL_DIM",
+        "toColumn": "MATERIAL_NO_DIM"
+      },
+      {
+        "name": "ad2a7ce7-0186-4894-a239-037dbc85d32a",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "BILLING_BLOCK_STATUS_CODE",
+        "toTable": "app vw_BILLING_BLOCK_STATUS_DIM",
+        "toColumn": "BILLING_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "fdd630bc-ba8a-4b23-8f07-024b862e923d",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "CREDIT_CHECK_CODE",
+        "toTable": "app vw_CREDIT_CHECK_DIM",
+        "toColumn": "OVERALL_CREDIT_STATUS_CODE"
+      },
+      {
+        "name": "33e51ac6-a7c3-424d-8e84-7d80c6fe1cf0",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "NTC_IND_CODE",
+        "toTable": "app vw_NTC_DIM",
+        "toColumn": "NTC_NON_NTC_STATUS"
+      },
+      {
+        "name": "ee04bf53-cd48-4fdc-ab5b-3601840d0798",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "AGING_RANGE_DESC",
+        "toTable": "app vw_AGING_RANGE_DIM",
+        "toColumn": "AGING_RANGE_DESC"
+      },
+      {
+        "name": "b4dbe75a-9ad9-48f3-b69c-5d318dc7a52c",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "DELIVERY_BLOCK_STATUS_CODE",
+        "toTable": "app vw_DELIVERY_BLOCK_STATUS_DIM",
+        "toColumn": "DELIVERY_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "f33c2bbd-3e0d-4d3d-8225-8ed66389daf4",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "SALES_ORDER_NUMBER",
+        "toTable": "app vw_SALES_ORDER_DOCUMENT_DIM",
+        "toColumn": "SALES_ORDER_NO"
+      },
+      {
+        "name": "3f7567f4-4618-4b4a-97de-3fb3e1b9818a",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "SALES_ORDER_NUMBER",
+        "toTable": "app vw_SALES_ORDER_DOCUMENT_DIM",
+        "toColumn": "SALES_ORDER_NO"
+      },
+      {
+        "name": "bbdd38de-6292-46b0-b9c2-c459999ebbec",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "DELIVERY_BLOCK_STATUS_CODE",
+        "toTable": "app vw_DELIVERY_BLOCK_STATUS_DIM",
+        "toColumn": "DELIVERY_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "0dfa92da-b1af-4f54-ab0a-bd5389c8a901",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "NTC_IND_CODE",
+        "toTable": "app vw_NTC_DIM",
+        "toColumn": "NTC_NON_NTC_STATUS"
+      },
+      {
+        "name": "be22b904-4c37-4d53-b191-61084b28c414",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "BILLING_BLOCK_STATUS_CODE",
+        "toTable": "app vw_BILLING_BLOCK_STATUS_DIM",
+        "toColumn": "BILLING_BLOCK_STATUS_CODE"
+      },
+      {
+        "name": "ba3d0a6f-52a4-480c-baab-f4aae045e3f5",
+        "fromTable": "app vw_SALES_PROFITABILITY_DAILY_FACT",
+        "fromColumn": "CREDIT_CHECK_CODE",
+        "toTable": "app vw_CREDIT_CHECK_DIM",
+        "toColumn": "OVERALL_CREDIT_STATUS_CODE"
+      },
+      {
+        "name": "7d151ada-744d-4843-a908-17302e5c96b3",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "CUSTOMER_MAPPING_CPST_CODE",
+        "toTable": "app vw_CHANNEL_DIM",
+        "toColumn": "CUSTOMER_MAPPING_CPST_CODE"
+      },
+      {
+        "name": "279087c0-017a-453a-acce-ecb7b37a75ae",
+        "fromTable": "app vw_GC_BILLING_FACT",
+        "fromColumn": "CUSTOMER_MAPPING_CPST_CODE",
+        "toTable": "app vw_CHANNEL_DIM",
+        "toColumn": "CUSTOMER_MAPPING_CPST_CODE"
+      },
+      {
+        "name": "0f20c7bb-ced6-4ece-bae0-301fc4790af8",
+        "fromTable": "app vw_GC_DELIVERY_FACT",
+        "fromColumn": "CUSTOMER_MAPPING_CPST_CODE",
+        "toTable": "app vw_CHANNEL_DIM",
+        "toColumn": "CUSTOMER_MAPPING_CPST_CODE"
+      },
+      {
+        "name": "e20fba04-25a3-485b-9e9b-ffd092b61c57",
+        "fromTable": "app vw_GC_SALES_ORDER_FACT",
+        "fromColumn": "DELIVERY_PRIORITY_CODE",
+        "toTable": "app vw_DELIVERY_PRIORITY_DIM",
+        "toColumn": "DELIVERY_PRIORITY_CODE"
+      }
+    ],
+    "roles": [
+      {
+        "name": "Role",
+        "modelPermission": "read",
+        "members": [
+          {
+            "memberName": "Vaibhav.V.Singh@shell.com",
+            "identityProvider": "AzureAD"
+          },
+          {
+            "memberName": "obj:bbea28f4-d03b-4516-89d4-4eff51c08cd9@db1e96a8-a3da-442a-930b-235cac24cd5c",
+            "identityProvider": "AzureAD"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "600"
+      },
+      {
+        "name": "__TEdtr",
+        "value": "1"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}
